@@ -60,6 +60,8 @@ flutter {
 }
 
 dependencies {
+    classpath 'com.android.tools.build:gradle:3.3.0'
+    classpath 'com.google.gms:google-services:4.2.0'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'

@@ -43,5 +43,7 @@
 	<true/>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>To determine your current location for showing on the map</string>
 </dict>
 </plist>
