@@ -3,4 +3,4 @@
 A Flutter project that demonstrates custom markers in Google Maps.
 <br/><br/>
 
-<img src="demo.gif" alt="Demo" width="207" height="448" />
+<img src="demo.gif" alt="Demo" width="275" height="448" />
