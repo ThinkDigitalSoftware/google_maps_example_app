@@ -64,23 +64,15 @@ class _MapsHomeState extends State<MapsHome> {
                       markers: places.map((place) => place.marker).toSet(),
                       scrollGesturesEnabled: true,
                       zoomGesturesEnabled: true,
-                      onTap: (_) {
-                        setState(() {
-                          showListView = false;
-                        });
-                      },
+                      onTap: (_) => setState(() => showListView = false),
                       onCameraMoveStarted: () {
                         if (showListView) {
-                          setState(() {
-                            showListView = false;
-                          });
+                          setState(() => showListView = false);
                         }
                       },
                       onCameraIdle: () {
                         Future.delayed(Duration(seconds: 1)).then((_) {
-                          setState(() {
-                            showListView = true;
-                          });
+                          setState(() => showListView = true);
                         });
                       },
                     ),
@@ -96,9 +88,7 @@ class _MapsHomeState extends State<MapsHome> {
                   onNotification: (notification) {
                     if (notification is ScrollStartNotification) {
                       if (!showListView) {
-                        setState(() {
-                          showListView = true;
-                        });
+                        setState(() => showListView = true);
                       }
                     }
                     return null;
@@ -113,9 +103,7 @@ class _MapsHomeState extends State<MapsHome> {
                         place: places.toList()[index],
                         onTap: (place) async {
                           if (!showListView) {
-                            setState(() {
-                              showListView = true;
-                            });
+                            setState(() => showListView = true);
                           }
                           if (place != currentPlace) {
                             final mapsController = await _controller.future;
