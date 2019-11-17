@@ -1,5 +1,6 @@
-# google_maps_app
+# google_maps_example_app
 
-A new Flutter project that demonstrates custom markers in Google Maps.
+A Flutter project that demonstrates custom markers in Google Maps.
+<br/><br/>
 
-![Demo](demo.gif)
+<img src="demo.gif" alt="Demo" width="207" height="448" />
